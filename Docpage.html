@@ -5,83 +5,144 @@
 body{
     margin: 0 auto;
     background-color: #1B4965;
-    background-repeat: no-repeat;
+    
 }
 
 .nav-link{
     text-decoration: none;
     display: block;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 5px;
+    
+    
+    
+    
+
     
 }
 
 #navbar{
-    list-style-type: none;
+    border:5px solid orange;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 25%);
+    /* height: 100%; */
+    
+    
 }
 
+li{
+    list-style-type: none;
+    border-left: 3px solid orange;
+    border-bottom:3px solid orange;
+}
+
+
+ul{
+    
+    
+}
+
+#nav-header{
+    color: whitesmoke;
+}
+
+#main-doc{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media screen and (max-width:480px){
+    #section-div{
+        left: 0%;
+    }
+
+}
+    
+
+#section-div{
+    position: absolute;
+    left: 250px;
+
+}
+
+    .headers{
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    border-bottom:3px solid orange;
+    }
+
+    .parag{
+        font-family: Arial;
+    }
 </style>
 </head>
 
 <body>
+   
+
+
 <main id="main-doc">
+
+    <div id="navbar-div">
+    <nav id="navbar">
+        <header id="nav-header" >Shiraz Documentation</header>
+        <!-- <ul> -->
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#History" class="nav-link">History</a></li>
+            <li><a href="#Geography" class="nav-link">Geography</a></li>
+            <li><a href="#Economy" class="nav-link">Economy</a></li>
+            <li><a href="#Culture" class="nav-link">Culture</a></li>
+    
+        <!-- </ul> -->
+    </nav>
+    </div>
+   <div id="section-div">
     <section class="main-section" id="Introduction">
-        <h1>Introduction</h1>
-        <p>Shiraz is the fifth populated city in Iran. In past many times
+        <header class="headers"><li>Introduction</li></header>
+        <p class="parag">Shiraz is the fifth populated <code>city</code> in Iran. In past many times
             it was elected as the capital city of Iran.</p>
-        <p>Shiraz is located in Fars province.</p>
-        <p>it was <em>Pahlavi's</em> favorite place for vacations during summer 
+        <p class="parag">Shiraz is located in Fars province.</p>
+        <p class="parag">it was <em>Pahlavi's</em> favorite place for vacations during summer 
         beacuse of its good weather and its nature. </p>
     </section>
 
     <section class="main-section" id="History">
-        <h2>History</h2>
-        <p>Shiraz is founded in Pars Province, a central area for Persian civilisation.</p> 
-            <p>The earliest reference to Shiraz is on Elamite clay tablets dated to 2000 BC, 
+        <header class="headers"><li>History</li></header>
+        <p class="parag">Shiraz is founded in <code>Pars Province</code>, a central area for Persian civilisation.</p> 
+            <p class="parag">The earliest reference to Shiraz is on Elamite clay tablets dated to 2000 BC, 
             found in June 1970 during digging for the construction of a brick kiln in the southwest corner of the city.
             The tablets, written in ancient Elamite, name a city called Tiraziš.</p>
-            <p>Phonetically, this is interpreted as /tiračis/ or /ćiračis/. This name became Old Persian /širājiš/; 
+            <p class="parag">Phonetically, this is interpreted as /tiračis/ or /ćiračis/. This name became Old Persian /širājiš/; 
             through regular sound change comes the modern Persian name Shirāz.</p>
     </section>
 
     <section class="main-section" id="Geography">
-        <h3>Geography</h3>
-        <p>Shiraz's climate has distinct seasons,
+        <header class="headers"><li>Geography</li></header>
+        <p class="parag">Shiraz's <code>climate</code> has distinct seasons,
         and is overall classed as a cold semi-arid climate (Köppen climate classification BSk),
         though it is only a little short of a hot semi-arid climate (BSh) or a hot-summer Mediterranean climate (Köppen climate classification Csa).
         Summers are hot, with a July average high of 38.8 °C (101.8 °F).</p>
     </section>
 
     <section class="main-section" id="Economy">
-        <h4>Economy</h4>
-        <p>Shiraz is the economic center of southern Iran. 
-        The second half of the 19th century witnessed certain economic developments that greatly changed the economy of Shiraz.
+        <header class="headers"><li>Economy</li></header>
+        <p class="parag">Shiraz is the economic center of southern Iran. 
+        The second half of the 19th <code>century</code> witnessed certain economic developments that greatly changed the economy of Shiraz.
         The opening of the Suez Canal in 1869 allowed the extensive import into southern Iran of inexpensive European factory-made goods,
         either directly from Europe or via India.</p>
     </section>
 
 
     <section class="main-section" id="Culture">
-        <h5>Culture</h5>
-        <p>Shiraz is known as the city of poets, gardens, wine, nightingales and flowers.
-        The crafts of Shiraz consist of inlaid mosaic work of triangular design; 
-        silver-ware; carpet-weaving, and the making of the rugs called gilim (Shiraz Kilim) 
+        <header class="headers"><li>Culture</li></header>
+        <p class="parag">Shiraz is known as the city of poets, gardens, wine, nightingales and flowers.
+        The crafts of Shiraz consist of inlaid <code>mosaic</code> work of triangular design;</p> 
+        <p>silver-ware; carpet-weaving, and the making of the rugs called gilim (Shiraz Kilim) 
         and "jajim" in the villages and among the tribes.</p>
     </section>
+    </div>
 </main>
-
-    <nav id="navbar">
-        <h1>Shiraz Documentation</h1>
-        <ul>
-            <li><a href="#Introduction" class="nav-link">Introduction</li>
-            <li><a href="#History" class="nav-link">History</li>
-            <li><a href="#Geography" class="nav-link">Geography</li>
-            <li><a href="#Economy" class="nav-link">Economy</li>
-            <li><a href="#Culture" class="nav-link">Culture</li>
-
-        </ul>
-
-
-    </nav>
-
 
 
 
